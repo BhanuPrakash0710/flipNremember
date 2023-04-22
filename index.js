@@ -1,27 +1,27 @@
 let cardArray = [
     {
         'name' : 'Naruto',
-        'img' : '/images/Naruto_newshot.webp',
+        'img' : './images/Naruto_newshot.webp',
     },
     {
         'name' : 'Minato',
-        'img' : '/images/Minato.webp',
+        'img' : './images/Minato.webp',
     },
     {
         'name' : 'Kakashi Hatake',
-        'img' : '/images/Kakashi.webp',
+        'img' : './images/Kakashi.webp',
     },
     {
         'name' : 'Itachi',
-        'img' : '/images/Itachi.webp',
+        'img' : './images/Itachi.webp',
     },
     {
         'name' : 'Pain',
-        'img' : '/images/Pain.png',
+        'img' : './images/Pain.png',
     },
     {
         'name' : 'Sasuke',
-        'img' : '/images/Sasuke.jpg',
+        'img' : './images/Sasuke.jpg',
     }
 ]
 
