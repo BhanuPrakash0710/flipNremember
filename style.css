@@ -1,0 +1,99 @@
+
+*{margin: 0; padding: 0;box-sizing: border-box}
+:root{
+    --main-bg : #EEE9DA;
+    --card-bg : #f9adad;
+    --border-bg : #ffff00;
+}
+
+h1{
+    color: #6096B4;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 4rem;
+    margin-bottom: -85px;
+    margin-top: -30px;
+}
+
+#submit{
+    color: #6096B4;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--main-bg);
+    gap: 5rem;
+    height: 110vh;
+}
+#card-section{
+    margin-top: -70px;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+/*.card{
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--card-bg);
+    background-size:cover;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-repeat: no-repeat;
+}
+
+.selected-card{
+    border: .5rem solid var(--border-bg);
+}
+.same-card{
+    border: .5rem solid green;
+}*/
+.card {
+    position: relative;
+    transition: all .4s linear;
+    transform-style: preserve-3d;
+}
+
+.card,
+.back-card,
+.front-card {
+    height: 10rem;
+    width: 10rem;
+}
+
+.back-card,
+.front-card {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front-card {
+    background: var(--border-bg);
+    background-size: contain;
+    border-radius: .6rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 2rem;
+}
+
+.back-card {
+    transform: rotateY(180deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 2rem;
+}
+
+.selected-card{
+    transform: rotateY(180deg);
+}
+
+.same-card .front-card{
+    background-color: var(--card-bg);
+}
